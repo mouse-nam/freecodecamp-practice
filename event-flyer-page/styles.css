@@ -1,0 +1,24 @@
+body {
+    border: 10px solid brown;
+    background-color: rosybrown;
+    /* Sets the background to rosy brown */
+    font-family: Arial, sans-serif;
+    /* Sets Arial as the primary font, with sans-serif as a fallback */
+    text-align: center;
+    /* Centers the text within the body */
+    padding: 50px 0;
+    /* Adds padding to the top and bottom of the body */
+    margin: 0 auto;
+    width: 100vw;
+    /* Sets the body width to 100% of the viewport width */
+    min-height: calc(100vh - 100px);
+
+}
+
+hr {
+    width: 50%;
+}
+
+section {
+    width: 50%;
+}
