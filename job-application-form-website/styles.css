@@ -1,24 +1,157 @@
 body {
-    border: 10px solid brown;
-    background-color: rosybrown;
-    /* Sets the background to rosy brown */
-    font-family: Arial, sans-serif;
-    /* Sets Arial as the primary font, with sans-serif as a fallback */
-    text-align: center;
-    /* Centers the text within the body */
-    padding: 50px 0;
-    /* Adds padding to the top and bottom of the body */
-    margin: 0 auto;
-    width: 100vw;
-    /* Sets the body width to 100% of the viewport width */
-    min-height: calc(100vh - 100px);
-
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-hr {
-    width: 50%;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-section {
-    width: 50%;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* .radio-group input[type="radio"]:checked+label {
+    border: 2px solid blue;
+    background-color: #e0f7fa;
+}
+
+.radio-group label {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: #007BFF;
+    background-color: #007BFF;
+    box-shadow: #0056b3;
+}
+
+.radio-group input[type="radio"]:first-of-type {
+    margin-left: 0;
+} */
+
+
+
+
+/* Default styles for radio buttons */
+.radio-group input[type="radio"] {
+    /* Basic styling */
+    appearance: none;
+    /* Hide default radio button appearance */
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    /* Default border */
+    border-radius: 50%;
+    /* Make it round */
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    /* For the pseudo-element */
+}
+
+/* Styles for a checked radio button */
+.radio-group input[type="radio"]:checked {
+    border-color: #007bff;
+    /* Point 16: Change border color */
+    background-color: #007bff;
+    /* Point 17: Add background color */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+    /* Point 17: Add box shadow */
+}
+
+/* Style the custom radio button's inner circle */
+.radio-group input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for the label associated with a checked radio button */
+.radio-group input[type="radio"]:checked+label {
+    color: #007bff;
+    /* Point 18: Change text color of the label */
+    font-weight: bold;
+}
+
+/* If there might be other elements between input and label, use '~' */
+/* .radio-group input[type="radio"]:checked ~ label {
+  color: #007bff;
+  font-weight: bold;
+} */
+
+/* Point 19: Style the first input field differently */
+input:first-of-type {
+    margin-left: 0;
+    /* Example: Remove left margin for the very first one */
+    border-color: green;
+    /* Example: Different border for the first */
 }
