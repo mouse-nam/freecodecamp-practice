@@ -4,3 +4,41 @@ body {
     font-family: Arial, sans-serif;
     /* Sets Arial as the primary font, with sans-serif as a fallback */
 }
+
+
+#email {
+    width: 500px;
+    margin: 50px auto;
+
+    box-sizing: border-box;
+    /* Add any other necessary styles for #email here */
+    padding: 50px;
+    border: 2px solid black;
+    /* Example border */
+}
+
+#confidential {
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    flood-color: red;
+    border: 2px solid red;
+    transform: rotate(45deg);
+}
+
+#top-secret {
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    flood-color: red;
+    border: 2px solid red;
+    transform: rotate(-45deg);
+}
+
+.blurred {
+    filter: blur(3px);
+}
