@@ -1,0 +1,55 @@
+#playing-cards {
+    display: flex;
+    /* Enables flexbox layout */
+    justify-content: center;
+    /* Horizontally centers children */
+    flex-wrap: wrap;
+    /* Allows children to wrap to the next line if needed */
+    gap: 20px;
+    /* Creates a 20px space between children */
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 200px;
+    height: 400px;
+    /* White background */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    padding: 20px;
+    /* Inner spacing */
+    margin: 20px;
+    /* Outer spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+    overflow: hidden;
+    /* Ensures content doesn't spill out */
+    border: 1px solid black;
+}
+
+.card:hover {
+    transform: translateZ(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* More pronounced shadow on hover */
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.middle {
+    align-self: center;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right {
+    align-self: flex-end;
+}
