@@ -1,0 +1,22 @@
+.item-list {
+    list-style-type: none;
+    /* Removes the bullet points */
+    padding: 0;
+}
+
+.favorite-icon {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ccc;
+    /* Initial color of the empty heart */
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.filled {
+    color: #ff0000;
+    /* Red color for the filled heart */
+}
